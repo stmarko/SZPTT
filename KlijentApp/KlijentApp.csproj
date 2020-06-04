@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AB270D1-0FAE-4DC0-85DA-AC130BB94D13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KlijentApp</RootNamespace>
+    <AssemblyName>KlijentApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\Bunifu UI WinForms 1.8.0.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Bunifu UI WinForms 1.8.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DetaljiSportiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiSportiste.Designer.cs">
+      <DependentUpon>DetaljiSportiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetaljiTurnira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetaljiTurnira.Designer.cs">
+      <DependentUpon>DetaljiTurnira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Komunikacija.cs" />
+    <Compile Include="KontrolerKI.cs" />
+    <Compile Include="KreirajKlub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KreirajKlub.Designer.cs">
+      <DependentUpon>KreirajKlub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KreirajSportistu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KreirajSportistu.Designer.cs">
+      <DependentUpon>KreirajSportistu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KreirajTurnir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KreirajTurnir.Designer.cs">
+      <DependentUpon>KreirajTurnir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PocetnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetnaForma.Designer.cs">
+      <DependentUpon>PocetnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaSportiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PretragaSportiste.Designer.cs">
+      <DependentUpon>PretragaSportiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaTurnira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PretragaTurnira.Designer.cs">
+      <DependentUpon>PretragaTurnira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DetaljiSportiste.resx">
+      <DependentUpon>DetaljiSportiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetaljiTurnira.resx">
+      <DependentUpon>DetaljiTurnira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KreirajKlub.resx">
+      <DependentUpon>KreirajKlub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KreirajSportistu.resx">
+      <DependentUpon>KreirajSportistu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KreirajTurnir.resx">
+      <DependentUpon>KreirajTurnir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetnaForma.resx">
+      <DependentUpon>PocetnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PretragaSportiste.resx">
+      <DependentUpon>PretragaSportiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PretragaTurnira.resx">
+      <DependentUpon>PretragaTurnira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domen\Domen.csproj">
+      <Project>{3eadfeac-7bbf-4d01-80d1-d3a445cf612f}</Project>
+      <Name>Domen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
